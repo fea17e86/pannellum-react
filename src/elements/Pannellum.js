@@ -106,6 +106,9 @@ class Pannellum extends Component {
     // make the array of sub components, even if its one, it become array of one 
     let hotspots = [...children];
     let hotspotArray = [];
+    
+    console.log("hotspots", hotspots, children);
+    
     if (Array.isArray(hotspots)){
       hotspots.map(hotspot =>{
         switch (hotspot.props.type){
